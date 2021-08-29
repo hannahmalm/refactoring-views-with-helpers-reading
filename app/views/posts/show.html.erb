@@ -1,2 +1,9 @@
+
+<% title @post.title%>
+
 <h1><%= @post.title %></h1>
+<!--Reader wants to know when the post was updated-->
+<!--strftime makes the time readable-->
+<p><%= last_updated @post%> </p>
+
 <p><%= @post.description %></p>
